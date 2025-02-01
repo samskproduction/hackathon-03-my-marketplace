@@ -1,0 +1,41 @@
+{
+  "name": "hackathon-03-my-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "import-data": "node ./scripts/importData.mjs"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.10.3",
+    "@paypal/react-paypal-js": "^8.8.1",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.72.1",
+    "@stripe/stripe-js": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "hackathon-03-my-marketplace": "file:",
+    "import-js": "^6.0.0",
+    "lucide-react": "^0.474.0",
+    "next": "14.2.16",
+    "next-sanity": "^9.8.46",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.4.0",
+    "sanity": "^3.72.1",
+    "styled-components": "^6.1.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.16",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
