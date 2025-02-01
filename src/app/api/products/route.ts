@@ -4,14 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const data = await client.fetch(`*[_type=="product"]{
-      _id,
-      name,
-      price,
-      image,
-      description,
-      slug
-}`);
+    const data = await client.fetch(`*[_type=="product"]`);
 
     return  NextResponse.json(data, { status: 200 });
   } catch (error) {
