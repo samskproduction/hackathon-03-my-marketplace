@@ -52,7 +52,7 @@ async function page({ params }: { params: { slug: string } }) {
                 </div>
               </div>
               <button className="bg-[#2a254b]  px-4 py-4 ">
-                <CartIcon id={product.id} />
+                <CartIcon id={product._id} />
               </button>
             </div>
           </div>

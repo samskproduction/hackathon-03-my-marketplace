@@ -12,7 +12,7 @@ const banner = () => {
             objectFit='cover'
             className='w-full h-full'
         />
-        <div className='absolute top-[250px] sm:left-[470px] ml-2 flex  '>
+        <div className='absolute top-[250px]  ml-2 sm:left-[200px] lg:left-[470px] flex  '>
       <input type="text" placeholder='Your@email.com'  className='py-4 sm:px-12 px-4   bg-white'/>
       
       

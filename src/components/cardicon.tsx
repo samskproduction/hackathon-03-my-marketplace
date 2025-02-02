@@ -17,6 +17,7 @@ const CartIcon = ({ id, add,}: { id: string; add?: string; }) => {
   }, [cart]);
 
   const addCart = (id: string) => {
+    console.log(id)
     setCart([...cart, id ]);
   };
 
