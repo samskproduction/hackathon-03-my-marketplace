@@ -9,13 +9,14 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, './.env.local') });
 
 
-const client = createClient({
-  projectId: "vlsu19wp",
-  dataset: "production",
-  useCdn: false,
-  token:"skCId6mBzzpblu9A6fhJSz82tqkvw5tLQJzPxyTPXdOmg0SZ5GThiII1EZHW9A9JxlFiBPl8uqC78wk0Xhup7bmZx9m5R0NwmYsEJj6iqYvrI49qc4E6lPqM3BuyG7IKFqdiOZIlTfUOETTqTbdh9gtIVHYt2QGp6qMnMZBO1EmkssPk1bkt",
-  apiVersion: '2021-08-31',
+ const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  useCdn: true,
+  token: process.env.NEXT_PUBLIC_SANITY_TOKEN,
+  apiVersion,
 });
+
 
 async function uploadImageToSanity(imageUrl) {
   try {
