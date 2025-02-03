@@ -68,10 +68,6 @@ const Page = () => {
                 {order._id}
               </p>
               <p className="text-sm text-gray-500">
-                <span className="text-black font-bold">Order Name:</span>{" "}
-                {order.email}
-              </p>
-              <p className="text-sm text-gray-500">
                 <span className="text-black font-bold">Order Date:</span>{" "}
                 {new Date(order._createdAt).toLocaleDateString()}
               </p>
